@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothings:grayscale;
+    -moz-font-smoothings:antialiased;
+}
+
+:root{
+    font-size: 62.5%;
+    --color-header:#C4C4CC;
+    --color-header-hover:#FFFFFF;
+    --color-tt:#E1E1E6;
+    --color-neural-whiter:#FFFFFF;
+    --color-buttonhover-white: #FFFFFF;
+    --color-button: #02799D;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+
+    padding: 4rem 0 4rem 7.2rem;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    gap: 3.2rem;
+    cursor: pointer;
+}
+header img{
+    font-size: 4.2rem;
+}
+
+nav a{
+    color:var(--color-header) ;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+}
+
+nav a:hover{
+    color: var(--color-header-hover);
+}
+
+
+main{
+    width: 100%;
+
+}
+
+h1{
+    font-size: 4.8rem;
+    color: var(--color-tt);
+    font-style: normal;
+    line-height: 6.0rem;
+    font-weight: 700;
+}
+
+button{
+    margin-top: 2.4rem;
+    padding: 1.2rem 3.2rem;
+    border-radius: .5rem;
+    background: none;
+    border: 2px solid var(--color-neural-whiter);
+    color: var(--color-neural-whiter);
+    cursor: pointer;
+
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+}
+
+.container-home button:hover {
+
+background-color: var(--color-buttonhover-white);
+color: var(--color-button);
+transform: scale(1.08);
+
+}
+
+section{
+    
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+p{
+    color: var(--color-tt);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+
+.container-home{
+    margin-top: 17.2rem;
+    text-align: center;
+
+}
+section.home{
+    background-image: url(../assets/mountains-universe-1.png);
+    background-position: center;
+    background-size: cover;
+    
+    
+    display: grid;
+    place-items: center;
+}
+section.universe{
+    background-image: url(../assets/mountains-universe02.png);
+    background-position: center;
+    background-size: cover;
+}
+section.exploration{
+    background-image: url(../assets/mountains-universe-3.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container-universe, .container-exploration{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 18.5rem 0 0 10rem;
+
+    color: var(--color-neural-whiter);
+    max-width: 648px;
+}
